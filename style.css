@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* top bar */
+.banner-page{
+    margin: 0 30px;
+}
+.top-bar {
+    background-color: #0077b6;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.top-link {
+    color: #ffffff;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.top-link:hover {
+    color: #e0e0e0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 16px;
+}
+
+.icon-link {
+    color: #ffffff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.icon-link:hover {
+    color: #e0e0e0;
+}
+
+.left-links {
+    margin-right: 20px;
+}
+
+/* logo */
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    align-items: center;
+
+}
+
+.donate-now-btn{
+    width: 200px;
+    height: 50px;
+    background-color: #df6a9a;
+    border-radius: 25px;
+    font-weight: 600;
+}
+.donate-now-btn:hover{
+    background-color: #bd567f; /* Darker shade */
+    color: #ffebf0;
+}
+.donate-now-btn a{
+    text-decoration: none;
+    color: #ffffff;
+}
+/* Custom Navbar */
+.custom-navbar {
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.custom-navbar .nav-link {
+    color: #444;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 15px;
+    transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #000;
+}
+
+.custom-navbar .nav-item {
+    margin: 0 5px;
+}
+/* index-banner */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1410px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.content {
+    width: 50%;
+}
+
+.content p{
+    margin-bottom: 0;
+}
+.subtitle {
+    color: #0077b6;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.content h1 {
+    font-weight: 700;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px ;
+}
+
+.link-button {
+    background-color: #0077b6;
+    font-weight: 500;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.link-button:hover {
+    background-color: #005bb5;
+}
+
+.image-container {
+    position: relative;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    border-radius: 50%;
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sliding-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 57%;
+    left: 58%;
+    object-fit: contain;
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+    transition: opacity 0.5s ease-in-out;
+}
+.indicators {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #0073e6;
+}
+/* hero-banner */
+.online-text{
+    color: #0077b6;
+}
+.hero-banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.certificate-details, #state-section {
+    display: none; /* Initially hidden */
+}
+
+/* form-section */
+.form-section .card {
+    margin-top: 50px;
+    background-color: #f8f9fa;
+}
+
+.card {
+    border-radius: 12px;
+}
+
+.donation-btn {
+    margin: 5px;
+    width: 100px;
+    border-radius: 10px !important;   
+    outline-color: #0077b6;
+    margin-right: 12px;
+}
+.donation-btn:focus{
+    background-color: #0077b6 !important;
+    color: #ffffff;
+}
+.donation-btn.active{
+    background-color: #0077b6 !important;
+    color: #ffffff;
+}
+
+.donate-grp-btn {
+    width: 75%;
+}
+
+.donate-type{
+    margin-right: 35px !important;
+}
+.btn-group-vertical>.btn,
+.btn-group>.btn {
+    flex: none;
+}
+
+/* form */
+.form-data {
+    display: flex;
+    align-items: center !important;
+}
+
+.form-label {
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.form-select, .form-control {
+    border-color: #0077b6 !important;
+}
+
+.amount-label {
+    width: 15%;
+}
+
+.fs-small {
+    font-size: small !important;
+}
+
+.prefix-select {
+    margin-top: 19.5px;
+}
+
+::placeholder {
+    color: #adb5bd !important;
+}
+
+.certificate-details {
+    display: flex;
+
+}
+
+.bottom-line {
+    font-size: small;
+}
+
+.donate-btn {
+    border-radius: 20px;
+    background-color: #0077b6;
+    color: #ffffff;
+    width: 25%;
+}
+
+.end-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.terms {
+    font-size: smaller;
+}
+
+.terms a:hover {
+    text-decoration: underline !important;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .custom-navbar .navbar-collapse {
+        background-color: #f0f0f0;
+        padding: 10px;
+    }
+
+    .custom-navbar .nav-link {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .amount-label {
+        width: auto;
+    }
+
+    .donate-btn {
+        width: 100%;
+    }
+
+    .donate-grp-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-bar .container {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .left-links,
+    .social-icons {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .form-data {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+
+    .certificate-details {
+        flex-direction: column;
+
+    }
+}
